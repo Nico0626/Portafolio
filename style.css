@@ -1,0 +1,49 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Color de fondo suave */
+    color: #343a40; /* Color de texto principal */
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 60px 0;
+}
+
+section:nth-of-type(even) {
+    background-color: #e9ecef; /* Un color de fondo diferente para secciones alternas */
+}
+
+/* Ajuste para la barra de navegación fija */
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Estilos para las tarjetas de habilidades */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para las imágenes de proyectos */
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px; /* Altura fija para las imágenes de proyectos */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+}
+
+/* Ajuste para el texto del footer */
+footer p {
+    margin-bottom: 0;
+}
