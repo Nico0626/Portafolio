@@ -8,45 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Estilos básicos para la pantalla de carga, también pueden ir en style.css */
-        #loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000;
-            /* Fondo oscuro */
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-size: 2em;
-            z-index: 9999;
-            /* Asegura que esté por encima de todo */
-            transition: opacity 0.5s ease-out;
-            /* Transición suave para ocultar */
-        }
-
-        #loading-screen.hidden {
-            opacity: 0;
-            pointer-events: none;
-            /* Permite interacciones una vez oculto */
-        }
-
-        .spinner-border {
-            width: 3rem;
-            height: 3rem;
-            margin-bottom: 15px;
-        }
-    </style>
 </head>
 
 <body>
-
-    <div id="loading-screen">
+    <div class="loading-screen" id="loading-screen">
         <div class="spinner-border text-light" role="status">
             <span class="visually-hidden">Cargando...</span>
         </div>
@@ -83,15 +48,23 @@
         <section id="about" class="py-5 mt-5">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center">
-                    <img src="https://via.placeholder.com/200" alt="Tu Foto"
-                        class="img-fluid rounded-circle mb-3 border border-light border-3">
+                    <img src="img/Perfil.jpg" alt="foto-de-perfil"
+                        class="img-fluid rounded-circle w-50 mb-3 border border-light border-3">
+
                 </div>
                 <div class="col-md-8">
-                    <h2 class="display-4">Hola, soy Nicolas Menon</h2>
-                    <p class="lead">Soy un Desarrollo de software, apasionado por [Tu Área de Interés]. Me dedico a
-                        crear soluciones innovadoras y funcionales.</p>
-                    <p>Aquí puedes agregar más detalles sobre tu experiencia, tu filosofía de trabajo o cualquier cosa
-                        que quieras destacar sobre ti.</p>
+                    <h2 class="display-4">Hola, soy Nicolás Menón</h2>
+                    <p class="lead">
+                        Soy estudiante de dos tecnicaturas: Desarrollo de Software y Ciencia de Datos. Me apasiona la
+                        programación,
+                        el análisis de información y la creación de soluciones innovadoras que ayuden a mejorar procesos
+                        y tomar decisiones más inteligentes.
+                    </p>
+                    <p>
+                        Tengo conocimientos en lenguajes como Kotlin, adquiridos mediante formación complementaria, y
+                        continúo fortaleciendo mis habilidades en programación, bases de datos y análisis de datos a
+                        través de mis estudios en las tecnicaturas de Desarrollo de Software y Ciencia de Datos.
+                    </p>
                 </div>
             </div>
         </section>
@@ -105,7 +78,7 @@
                     <div class="card text-center p-3">
                         <i class="bi bi-code-slash fs-1 text-primary"></i>
                         <h5 class="card-title mt-3">Desarrollo Web</h5>
-                        <p class="card-text">HTML, CSS, JavaScript, React, Angular</p>
+                        <p class="card-text">HTML, CSS, JavaScript, React, Angular, Kotlin</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
